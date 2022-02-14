@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap');
+
+@font-face {
+    font-family: "Aeternus";
+    src: url("/fonts/aeternus_nano.woff2") format("woff2"),
+        url("/fonts/aeternus_nano.woff") format("woff");
+}
+
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 1740px;
+    margin: 0 auto;
+}
+
+/* Hero */
+
+.hero .background {
+    background-image: url("../images/hero_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .background .header {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .background .header .logo {
+    width: 582px;
+    height: 51px;
+
+    background-image: url("../images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero .background .header .info {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.hero .background .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 450px;
+}
+
+.hero .background .content h2 {
+    width: 55%;
+    margin-bottom: -80px;
+
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 320px;
+    line-height: 174px;
+    letter-spacing: 0.01em;
+}
+
+.hero .background .content .link {
+    width: 36%;
+    padding: 8px 0;
+    margin: auto 0 80px auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 80px;
+    text-transform: lowercase;
+}
+
+/* About */
+
+.about .content {
+    padding-top: 120px;
+}
+
+.about .content p {
+    width: 48%;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.about .content p:first-child {
+    margin-bottom: 30px;
+}
+
+.about .content ul {
+    width: 60%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 200px;
+}
+
+.about .content ul li {
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 560px;
+    line-height: 305px;
+    letter-spacing: 0.01em;
+}
+
+.about .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 280px;
+}
+
+.about .content .container .card-list {
+    display: flex;
+}
+
+.about .content .container .card-list .card {
+    width: 390px;
+}
+
+.about .content .container .upper .card:not(:last-child) {
+    margin-right: 210px;
+}
+
+.about .content .container .lower .card:not(:last-child) {
+    margin-right: 360px;
+}
+
+.about .content .card-list .card .image {
+    width: 100%;
+    height: auto;
+}
+
+.about .content .container .card-list .card .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .content .container .card-list .card .info .avatar {
+    width: 80px;
+    height: 80px;
+
+    margin-top: -47px;
+    margin-left: 20px;
+
+    background-position: center center;
+    background-size: contain;
+}
+
+.about .content .container .card-list .card .info span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+
+    margin-right: 10px;
+}
+
+.about .content .container .card-list .first {
+    margin-top: 400px;
+}
+
+.about .content .container .card-list .third {
+    margin-top: 230px;
+}
+
+.about .content .container .card-list .fourth {
+    margin-top: 168px;
+}
+
+.about .content .container .card-list .fifth {
+    margin-top: -300px;
+}
+
+.about .content .container .card-list .card .info .naoki {
+    background-image: url("../images/naoki_ava.png");
+}
+
+.about .content .container .card-list .card .info .eboy {
+    background-image: url("../images/eboy_ava.png");
+}
+
+.about .content .container .card-list .card .info .benson {
+    background-image: url("../images/benson_ava.png");
+}
+
+.about .content .container .card-list .card .info .yatreda {
+    background-image: url("../images/yatreda_ava.png");
+}
+
+.about .content .container .card-list .card .info .hische {
+    background-image: url("../images/hische_ava.png");
+}
+
+.about .content .container h2 {
+    width: 20%;
+
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 320px;
+    line-height: 174px;
+    letter-spacing: 0.01em;
+}
+
+/* How It Works */
+
+.how_it_works {
+    margin-top: 320px;
+}
+
+.how_it_works h3 {
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 220px;
+    line-height: 120px;
+    letter-spacing: 0.02em;
+}
+
+.how_it_works ul {
+    margin-top: 60px;
+
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.how_it_works ul li {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #FFFFFF;
+
+    padding: 60px 0;
+}
+
+.how_it_works ul li .number {
+    width: 48px;
+    height: 48px;
+
+    background-position: center center;
+    background-size: contain;
+}
+
+.how_it_works ul li .one {
+    background-image: url(../images/one.svg);
+}
+
+.how_it_works ul li .two {
+    background-image: url(../images/two.svg);
+}
+
+.how_it_works ul li .three {
+    background-image: url(../images/three.svg);
+}
+
+.how_it_works ul li .description {
+    width: 58%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how_it_works ul li .description .text {
+    width: 60%;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.how_it_works ul li .description .info {
+    width: 40%;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #666666;
+}
+
+/* Why */
+
+.why {
+    margin-top: 300px;
+}
+
+.why .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.why .content .left {
+    width: 30%;
+}
+
+.why .content .left h3{
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 220px;
+    line-height: 120px;
+    letter-spacing: 0.02em;
+}
+
+.why .content .right {
+    width: 58%;
+}
+
+.why .content .right .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why .content .right .wrapper .card {
+    width: 390px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 80px;
+}
+
+.why .content .right .wrapper .card .img {
+    width: 200px;
+    height: 200px;
+
+    background-image: url("../images/img_plomb.svg");
+    background-position: center center;
+    background-size: contain;
+
+    margin-bottom: 40px;
+}
+
+.why .content .right .wrapper .card .card-name {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    margin-bottom: 16px;
+}
+
+.why .content .right .wrapper .card .card-descrip {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #666666;
+}
+
+/* Partners */
+
+.partners {
+    margin-top: 300px;
+}
+
+.partners .content h3 {
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 220px;
+    line-height: 120px;
+    letter-spacing: 0.02em;
+}
+
+.partners .partners-list {
+    width: 100%;
+    height: 525px;
+    margin-top: -60px;
+
+    background-image: url("../images/partners.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Join */
+
+.join {
+    margin-top: 240px;
+}
+
+.join .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.join .content .left {
+    width: 40%;
+}
+
+.join .content .left h1 {
+    font-family: "Aeternus", sans-serif;
+    font-weight: 200;
+    font-size: 560px;
+    line-height: 305px;
+    letter-spacing: 0.01em;
+}
+
+.join .content .right {
+    width: 37%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join .content .right .link {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 80px;
+    text-transform: lowercase;
+}
+
+.join .content .right .notion {
+    display: flex;
+
+    margin-top: 60px;
+}
+
+.join .content .right .notion .img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+
+    background-image: url("../images/notion.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.join .content .right .notion .container span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.join .content .right .notion .container a {
+    width: 24%;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    border-bottom: 1px solid #FFFFFF;
+
+    margin-top: 20px;
+}
+
+/* Links */
+
+.links {
+    margin-top: 260px;
+    padding: 40px 0;
+
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.links .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links .content a {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 80px;
+}
+
+/* Authors */
+
+.authors .content {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+
+    padding: 40px 0;
+}
