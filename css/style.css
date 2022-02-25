@@ -159,6 +159,10 @@ p {
     margin-top: 320px;
 }
 
+.about .content .mobile-size {
+    display: none;
+}
+
 .about .content .container .card-list {
     display: flex;
     justify-content: space-around;
@@ -438,6 +442,9 @@ p {
     flex-direction: column;
 
     margin-right: 20px;
+}
+
+.why .content .right .wrapper .card:not(:last-child) {
     margin-bottom: 80px;
 }
 
@@ -448,11 +455,17 @@ p {
     background-image: url("../images/img_plomb.svg");
     background-position: center center;
     background-size: contain;
+    background-repeat: no-repeat;
 
     margin-bottom: 40px;
 }
 
-.why .content .right .wrapper .card .card-name {
+.why .content .right .wrapper .card .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.why .content .right .wrapper .card .container .card-name {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
@@ -460,7 +473,7 @@ p {
     margin-bottom: 16px;
 }
 
-.why .content .right .wrapper .card .card-descrip {
+.why .content .right .wrapper .card .container .card-descrip {
     font-weight: 600;
     font-size: 22px;
     line-height: 32px;
@@ -595,6 +608,7 @@ p {
     font-weight: 600;
     font-size: 22px;
     line-height: 32px;
+    color: #666666;
 
     padding: 40px 0;
 }
@@ -635,16 +649,384 @@ p {
     }
 }
 
-@media (max-width: 1200px) {
-    /* .hero .background .content {
+@media (max-width: 1100px) {
+
+    .hero .background .header .logo {
+        width: 310px;
+    }
+
+    .hero .background .content {
         flex-direction: column;
+
+        margin-top: 106px;
     }
 
     .hero .background .content h2 {
         width: 100%;
+
+        margin-bottom: 40px;
     }
 
     .hero .background .content .link {
         width: 100%;
-    } */
+
+        margin: 0;
+        margin-bottom: -210px;
+    }
+
+    .about {
+        margin-top: 240px;
+    }
+
+    .about .content ul {
+        width: 100%;
+    }
+
+    .about .content ul li {
+        font-size: 100px;
+        line-height: 150px;
+    }
+
+    .about .content p {
+        width: 65%;
+    }
+
+    .about .content .desktop-size {
+        display: none;
+    }
+
+    .about .content .mobile-size {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .content .mobile-size h2 {
+        width: 100%;
+
+        margin-bottom: 60px;
+    }
+
+    .about .content .mobile-size .card:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .about .content .mobile-size .one {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .two {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .three {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .four {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .five {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .card .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about .content .mobile-size .card .info .avatar {
+        width: 80px;
+        height: 80px;
+    
+        margin-top: -47px;
+        margin-left: 20px;
+    
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .about .content .mobile-size .card .info .eboy {
+        background-image: url("../images/eboy_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .naoki {
+        background-image: url("../images/naoki_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .benson {
+        background-image: url("../images/benson_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .hische {
+        background-image: url("../images/hische_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .yatreda {
+        background-image: url("../images/yatreda_ava.png");
+    }
+
+    .about .content .mobile-size .card .info span {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        margin-right: 10px;
+    }
+
+    .why .content {
+        flex-direction: column;
+    }
+
+    .why .content .left {
+        width: 100%;
+
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .why .content .right {
+        width: 100%;
+    }
+
+    .why .content .right .wrapper {
+        justify-content: space-between;
+    }
+
+    .why .content .right .wrapper .card {
+        margin-right: 0;
+    }
+
+    .join .content {
+        flex-direction: column;
+    }
+
+    .join .content .left {
+        width: 90%;
+
+        margin-bottom: 60px;
+    }
+
+    .join .content .right {
+        width: 100%;
+    }
+
+    .join .content .right .link {
+        width: 80%;
+    }
+
+    .join .content .right .notion {
+        width: 80%;
+    }
+
+    .links .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .background .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero .background .header .logo {
+        margin-bottom: 20px;
+    }
+
+    .hero .background .header .info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero .background .content h2 {
+        font-size: 52px;
+        line-height: 64px;
+        letter-spacing: -0.05em;
+
+        margin-bottom: 20px;
+    }
+
+    .hero .background .content .link {
+        font-size: 28px;
+        line-height: 32px;
+
+        margin-bottom: -100px;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .about .content .container {
+        margin-top: 120px;
+    }
+
+    .about .content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about .content ul {
+        margin-top: 120px;
+    }
+
+    .about .content ul li {
+        font-size: 76px;
+        line-height: 96px;
+        letter-spacing: -0.05em;
+    }
+
+    .about .content ul li:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .about .content .mobile-size h2 {
+        font-size: 44px;
+        line-height: 56px;
+        letter-spacing: -0.04em;
+    }
+
+    .how_it_works {
+        margin-top: 160px;
+    }
+
+    .how_it_works h3 {
+        font-size: 44px;
+        line-height: 56px;
+        letter-spacing: -0.04em;
+    }
+
+    .how_it_works ul {
+        margin-top: 45px;
+    }
+
+    .how_it_works ul li {
+        padding: 40px 0;
+    }
+
+    .how_it_works ul li .number {
+        width: 32px;
+        height: 32px;
+
+        margin-right: 15px;
+    }
+
+    .how_it_works ul li .description {
+        width: 90%;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .how_it_works ul li .description .text {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .how_it_works ul li .description .info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .why {
+        margin-top: 160px;
+    }
+
+    .why .content .left h3 {
+        font-size: 44px;
+        line-height: 56px;
+        letter-spacing: -0.04em;
+    }
+
+    .why .content .right .wrapper .card {
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+    .why .content .right .wrapper .card .img {
+        width: 100px;
+        height: 100px;
+
+        margin-right: 20px;
+    }
+
+    .why .content .right .wrapper .card .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 80%;
+    }
+
+    .why .content .right .wrapper .card .container .card-name {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .why .content .right .wrapper .card .container .card-descrip {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .partners {
+        margin-top: 160px;
+    }
+
+    .partners .partners-list {
+        height: 250px;
+    }
+
+    .join {
+        margin-top: 60px;
+    }
+
+    .join .content .left h1 {
+        width: 65%;
+
+        font-size: 76px;
+        line-height: 96px;
+        letter-spacing: -0.05em;
+    }
+
+    .join .content .right .link {
+        width: 100%;
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .join .content .right .notion {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .join .content .right .notion .container a {
+        margin-top: 10px;
+    }
+
+    .links {
+        margin-top: 120px;
+        padding: 20px 0;
+    }
+
+    .links .content a {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .authors .content {
+        font-size: 16px;
+        line-height: 24px;
+
+        padding: 20px 0;
+    }
 }
