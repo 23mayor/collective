@@ -706,6 +706,11 @@ p {
         margin-bottom: 60px;
     }
 
+    .about .content .mobile-size .card img {
+        width: 100%;
+        height: auto;
+    }
+
     .about .content .mobile-size .card:not(:last-child) {
         margin-bottom: 60px;
     }
@@ -749,6 +754,7 @@ p {
     
         background-position: center center;
         background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .about .content .mobile-size .card .info .eboy {
@@ -829,9 +835,16 @@ p {
 }
 
 @media (max-width: 768px) {
+
+    .content {
+        margin: 0 20px;
+    }
+
     .hero .background .header {
         flex-direction: column;
         align-items: flex-start;
+
+        margin: 0 20px;
     }
 
     .hero .background .header .logo {
@@ -841,6 +854,8 @@ p {
     .hero .background .header .info {
         font-size: 16px;
         line-height: 24px;
+
+        text-align: left;
     }
 
     .hero .background .content h2 {
@@ -889,6 +904,23 @@ p {
         font-size: 44px;
         line-height: 56px;
         letter-spacing: -0.04em;
+    }
+
+    .about .content .mobile-size .card {
+        width: 235px;
+    }
+
+    .about .content .mobile-size .card .info .avatar {
+        width: 60px;
+        height: 60px;
+
+        margin-top: -30px;
+        margin-left: 15px;
+    }
+
+    .about .content .mobile-size .card .info span {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .how_it_works {
@@ -1028,5 +1060,19 @@ p {
         line-height: 24px;
 
         padding: 20px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero .background .content .link {
+        margin-bottom: -160px;
+    }
+
+    .about .content {
+        padding-top: 160px;
+    }
+
+    .about .content p {
+        width: 100%;
     }
 }
