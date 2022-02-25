@@ -343,6 +343,7 @@ p {
 .how_it_works ul li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     border-top: 1px solid #FFFFFF;
 
@@ -370,7 +371,7 @@ p {
 }
 
 .how_it_works ul li .description {
-    width: 58%;
+    width: 70%;
 
     display: flex;
     justify-content: space-between;
@@ -379,9 +380,12 @@ p {
 
 .how_it_works ul li .description .text {
     width: 60%;
+
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+
+    margin-right: 40px;
 }
 
 .how_it_works ul li .description .info {
@@ -405,7 +409,9 @@ p {
 }
 
 .why .content .left {
-    width: 30%;
+    width: 40%;
+
+    margin-right: 40px;
 }
 
 .why .content .left h3{
@@ -416,7 +422,7 @@ p {
 }
 
 .why .content .right {
-    width: 58%;
+    width: 60%;
 }
 
 .why .content .right .wrapper {
@@ -431,6 +437,7 @@ p {
     display: flex;
     flex-direction: column;
 
+    margin-right: 20px;
     margin-bottom: 80px;
 }
 
@@ -551,7 +558,7 @@ p {
 }
 
 .join .content .right .notion .container a {
-    width: 24%;
+    width: 132px;
 
     font-weight: 600;
     font-size: 22px;
@@ -600,4 +607,44 @@ p {
     .hero .background .header {
         margin: 0 90px;
     }
+}
+
+@media (max-width: 1370px) {
+    .about .content .container .list-one .second {
+        display: none;
+    }
+
+    .about .content .container .list-two .fifth {
+        display: none;
+    }
+
+    .about .content .container .list-three .seventh {
+        display: none;
+    }
+
+    .why .content .right .wrapper {
+        justify-content: center;
+    }
+
+    .join .content .left {
+        width: 50%;
+    }
+
+    .join .content .right {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* .hero .background .content {
+        flex-direction: column;
+    }
+
+    .hero .background .content h2 {
+        width: 100%;
+    }
+
+    .hero .background .content .link {
+        width: 100%;
+    } */
 }
