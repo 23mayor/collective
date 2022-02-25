@@ -1013,7 +1013,10 @@ p {
     }
 
     .partners .partners-list {
-        height: 250px;
+        height: 500px;
+
+        background-image: url(../images/partners_mobile.svg);
+        background-size: cover;
     }
 
     .join {
