@@ -1174,6 +1174,9 @@ p {
     height: 42px;
 
     background-image: url("../images/close-popup.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .popup__form {
@@ -1313,6 +1316,7 @@ p {
     font-size: 56px;
     line-height: 80px;
     text-transform: lowercase;
+    
     text-align: center;
 
     border: 1px solid #FFFFFF;
@@ -1321,4 +1325,38 @@ p {
     color: #FFFFFF;
 
     background-color: transparent;
+}
+
+@media (max-width: 700px) {
+    .popup__timedata {
+        flex-direction: column;
+    }
+
+    .popup__date {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .popup__container h2 {
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    .popup__form input {
+        width: 245px;
+    }
+
+    .popup__close {
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup__form .validateBtn {
+        width: 135px;
+
+        font-size: 30px;
+        line-height: 50px;
+    }
 }
