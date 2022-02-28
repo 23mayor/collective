@@ -18,6 +18,10 @@ a {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul li {
     list-style: none;
 }
@@ -1105,6 +1109,9 @@ p {
     visibility: hidden;
 
     transition: all 0.8s ease 0s;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .popup:target {
@@ -1223,14 +1230,9 @@ p {
     opacity: 1;
     background: url("../images/arrow-indicator.svg") no-repeat center;
     background-size: contain;
-  }
 
-::-webkit-select-picker-indicator {
-    color: transparent;
-    opacity: 1;
-    background: url("../images/arrow-indicator.svg") no-repeat center;
-    background-size: contain;
-}
+    cursor: pointer;
+  }
 
 .select {
     margin-top: 10px;
@@ -1304,8 +1306,7 @@ p {
     background-color: #333333;
 }
 
-.popup__form button {
-    display: block;
+.popup__form .validateBtn {
     width: 255px;
 
     font-weight: 500;
@@ -1318,4 +1319,6 @@ p {
     border-radius: 100px;
 
     color: #FFFFFF;
+
+    background-color: transparent;
 }

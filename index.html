@@ -307,18 +307,18 @@
                     <h2>Registration</h2>
                     <a href="#hero" class="popup__close"></a>
                 </div>
-                <form action="" method="get">
+                <form action="" method="get" class="formWithValidation">
                     <div class="popup__form">
                         <label class="popup__text" for="name">Name</label>
-                        <input type="text" placeholder="Your name" name="name" required>
+                        <input class="name field" type="text" placeholder="Your name" name="name">
 
                         <label class="popup__text" for="email">Email</label>
-                        <input type="text" placeholder="Your email" name="email" required>
+                        <input class="email field" type="text" placeholder="Your email" name="email">
 
                         <div class="popup__timedata">
                             <div class="popup__date">
                                 <label class="popup__text" for="date">Date</label>
-                                <input type="date" name="date" id="date" required>
+                                <input class="date" type="date" name="date" id="date">
                             </div>
                             <div class="popup__select">
                                 <span>Time</span>
@@ -337,12 +337,21 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit">register</button>
+                        <button class="validateBtn" type="submit">register</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <script src="select.js"></script>
+    <script src="validation.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="inputmask.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".email").inputmask("email")
+        });
+    </script>
 </body>
 </html>
