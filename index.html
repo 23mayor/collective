@@ -313,7 +313,7 @@
                         <input class="name field" type="text" placeholder="Your name" name="name">
 
                         <label class="popup__text" for="email">Email</label>
-                        <input class="email field" type="text" placeholder="Your email" name="email">
+                        <input class="email field" type="email" placeholder="Your email" name="email" required>
 
                         <div class="popup__timedata">
                             <div class="popup__date">
@@ -345,13 +345,5 @@
     </div>
     <script src="select.js"></script>
     <script src="validation.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="inputmask.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".email").inputmask("email")
-        });
-    </script>
 </body>
 </html>

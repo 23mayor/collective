@@ -1206,7 +1206,8 @@ p {
     border: none;
 }
 
-.popup__form input[type=text] {
+.popup__form input[type=text],
+.popup__form input[type=email] {
     margin-bottom: 30px;
 }
 
