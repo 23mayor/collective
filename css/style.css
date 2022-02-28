@@ -1354,7 +1354,7 @@ p {
     }
 
     .popup__form .validateBtn {
-        width: 135px;
+        width: auto;
 
         font-size: 30px;
         line-height: 50px;
