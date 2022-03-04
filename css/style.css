@@ -1342,6 +1342,7 @@ p {
 
 .select.is-active .select__body {
     display: block;
+    z-index: 5;
 }
 
 .select__header {
