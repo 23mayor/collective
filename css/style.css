@@ -54,17 +54,27 @@ p {
 /* Hero */
 
 .hero .background {
-    background-image: url("../images/hero_background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
 }
 
+.hero .background .background__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .hero .background .header {
+
     max-width: 1740px;
     margin: 0 auto;
     padding-top: 60px;
 
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,6 +100,9 @@ p {
 }
 
 .hero .background .content {
+    position: relative;
+    z-index: 3;
+
     display: flex;
     justify-content: space-between;
     margin-top: 450px;
@@ -1202,6 +1215,7 @@ p {
 .popup:target {
     opacity: 1;
     visibility: visible;
+    z-index: 999;
 }
 
 .popup:target .popup__content {
