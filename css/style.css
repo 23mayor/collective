@@ -1012,6 +1012,8 @@ p {
     .about .content .mobile-size .card .info span {
         font-size: 16px;
         line-height: 24px;
+
+        text-align: right;
     }
 
     .how_it_works {
