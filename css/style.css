@@ -250,7 +250,7 @@ p {
 }
 
 .about .content .container .card-list .twelfth {
-    margin-top: -311px;
+    margin-top: -172px;
 }
 
 .about .content .container .card-list .card .info .soliman {
@@ -720,26 +720,61 @@ p {
     }
 
     .about .content .mobile-size .one {
-        margin-left: auto;
-        margin-right: 0;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .about .content .mobile-size .two {
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .about .content .mobile-size .three {
         margin-left: auto;
         margin-right: 0;
     }
 
-    .about .content .mobile-size .four {
+    .about .content .mobile-size .three {
         margin-left: 0;
         margin-right: auto;
     }
 
+    .about .content .mobile-size .four {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
     .about .content .mobile-size .five {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .six {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .seven {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .eight {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .nine {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .ten {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about .content .mobile-size .eleven {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .about .content .mobile-size .twelve {
         margin-left: auto;
         margin-right: 0;
     }
@@ -761,24 +796,74 @@ p {
         background-repeat: no-repeat;
     }
 
-    .about .content .mobile-size .card .info .eboy {
-        background-image: url("../images/eboy_ava.png");
+    .about .content .mobile-size .card .info .synticate {
+        background-image: url("../images/synticate_ava.png");
     }
 
-    .about .content .mobile-size .card .info .naoki {
-        background-image: url("../images/naoki_ava.png");
+    .about .content .mobile-size .card .info .hart {
+        background-image: url("../images/hart_ava.png");
     }
 
-    .about .content .mobile-size .card .info .benson {
-        background-image: url("../images/benson_ava.png");
+    .about .content .mobile-size .card .info .soliman {
+        background-image: url("../images/soliman_ava.png");
     }
 
-    .about .content .mobile-size .card .info .hische {
-        background-image: url("../images/hische_ava.png");
+    .about .content .mobile-size .card .info .dubois {
+        background-image: url("../images/dubois_ava.png");
     }
 
-    .about .content .mobile-size .card .info .yatreda {
-        background-image: url("../images/yatreda_ava.png");
+    .about .content .mobile-size .card .info .yuma {
+        background-image: url("../images/yuma_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .allahyari {
+        background-image: url("../images/allahyari_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .wannerstedt {
+        background-image: url("../images/wannerstedt_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .fornieles {
+        background-image: url("../images/fornieles_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .kristel {
+        background-image: url("../images/kristel_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .brocket {
+        background-image: url("../images/brocket_ava.png");
+    }
+
+    .about .content .container .card-list .card .info .ava-list {
+        display: flex;
+    }
+    
+    .about .content .container .card-list .card .info .ava-list .ava-1 {
+        background-image: url("../images/aes_ava1.png");
+    }
+    
+    .about .content .container .card-list .card .info .ava-list .ava-2 {
+        margin-left: -26px;
+    
+        background-image: url("../images/aes_ava2.png");
+    }
+    
+    .about .content .container .card-list .card .info .ava-list .ava-3 {
+        margin-left: -26px;
+    
+        background-image: url("../images/aes_ava3.png");
+    }
+    
+    .about .content .container .card-list .card .info .ava-list .ava-4 {
+        margin-left: -26px;
+    
+        background-image: url("../images/aes_ava4.png");
+    }
+
+    .about .content .mobile-size .card .info .axl {
+        background-image: url("../images/axl_ava.png");
     }
 
     .about .content .mobile-size .card .info span {
