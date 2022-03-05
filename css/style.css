@@ -489,6 +489,26 @@ p {
     margin-bottom: 40px;
 }
 
+.why .content .right .wrapper .card .one {
+    background-image: url(../images/1.svg);
+}
+
+.why .content .right .wrapper .card .two {
+    background-image: url(../images/2.svg);
+}
+
+.why .content .right .wrapper .card .three {
+    background-image: url(../images/3.svg);
+}
+
+.why .content .right .wrapper .card .four {
+    background-image: url(../images/4.svg);
+}
+
+.why .content .right .wrapper .card .five {
+    background-image: url(../images/5.svg);
+}
+
 .why .content .right .wrapper .card .container {
     display: flex;
     flex-direction: column;
