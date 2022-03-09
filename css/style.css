@@ -1513,7 +1513,7 @@ p {
         height: 500px;
 
         background-image: url(../images/partners_mobile.svg);
-        background-size: cover;
+        background-size: contain;
     }
 
     .join {
