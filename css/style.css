@@ -207,6 +207,7 @@ p {
 .about .content .card-list .card .image {
     width: 100%;
     height: auto;
+    border-radius: 12px;
 }
 
 .about .content .container .card-list .card .info {
@@ -223,6 +224,8 @@ p {
 
     background-position: center center;
     background-size: contain;
+    border-radius: 100%;
+    border: 5px solid #FFFFFF;
 }
 
 .about .content .container .card-list .card .info span {
@@ -290,6 +293,10 @@ p {
     background-image: url("../images/hart_ava.png");
 }
 
+.about .content .container .card-list .card .info .harper {
+    background-image: url("../images/harper_ava.jpg");
+}
+
 .about .content .container .card-list .card .info .yuma {
     background-image: url("../images/yuma_ava.png");
 }
@@ -308,6 +315,10 @@ p {
 
 .about .content .container .card-list .card .info .allahyari {
     background-image: url("../images/allahyari_ava.png");
+}
+
+.about .content .container .card-list .card .info .ruben {
+    background-image: url("../images/ruben_ava.jpg");
 }
 
 .about .content .container .card-list .card .info .axl {
@@ -1117,6 +1128,7 @@ p {
     .about .content .mobile-size .card img {
         width: 100%;
         height: auto;
+        border-radius: 12px;
     }
 
     .about .content .mobile-size .card:not(:last-child) {
@@ -1198,6 +1210,7 @@ p {
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
+        border-radius: 100%;
     }
 
     .about .content .mobile-size .card .info .synticate {
@@ -1222,6 +1235,10 @@ p {
 
     .about .content .mobile-size .card .info .allahyari {
         background-image: url("../images/allahyari_ava.png");
+    }
+
+    .about .content .mobile-size .card .info .ruben {
+        background-image: url("../images/ruben_ava.jpg");
     }
 
     .about .content .mobile-size .card .info .wannerstedt {
